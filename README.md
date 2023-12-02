@@ -1,7 +1,14 @@
 # My neovim config
 My personal config for web development.
 
-I use
+Dependencies
 ---
 - vim-plug
-- FZF for search files -- install fzf package
+- FZF -- install fzf package
+
+Install
+---
+```sh
+git clone https://github.com/IsaquePFerreira/nvim
+```
+After cloning the repository, start neovim and type :PlugInstall
