@@ -1,4 +1,4 @@
-vim.cmd [[
+vim.cmd([[
     let g:netrw_banner=0
     let g:netrw_winsize=20
 
@@ -17,4 +17,4 @@ vim.cmd [[
     augroup auto_commands
     autocmd filetype netrw call Netrw_mappings()
     augroup END
-]]
+]])
