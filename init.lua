@@ -5,6 +5,7 @@ vim.cmd([[
     filetype plugin indent on
     syntax on
     highlight clear StatusLine
+    hi Comment cterm=italic gui=italic
 ]])
 vim.opt.number = true
 vim.opt.cursorline = true
