@@ -26,6 +26,8 @@ vim.keymap.set("n", "]b", ":bn<cr>")
 vim.keymap.set("n", "[b", ":bp<cr>")
 vim.keymap.set("n", "<leader>c", ":bd<cr>")
 vim.keymap.set("n", "<c-t>", ":tabnew <cr>")
+vim.keymap.set("n", "]t", "gt")
+vim.keymap.set("n", "[t", "gT")
 
 -- Toggle functions
 -- Spell checking
@@ -34,3 +36,9 @@ vim.keymap.set("n", "<f2>", ":set spell!<cr>")
 vim.keymap.set("n", "<leader>tw", ":set wrap!<cr>")
 -- List
 vim.keymap.set("n", "<leader>tl", ":set list!<cr>")
+
+-- Copy selection to Xorg
+vim.cmd([[
+vmap <silent> <leader>yy "+y
+vmap <silent> <leader>dd "+c
+]])
