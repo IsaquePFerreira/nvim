@@ -56,3 +56,18 @@ o.fillchars = "fold: "
 ---- Spelling
 opt.spell = false
 opt.spelllang = "pt_br,en"
+
+require("colorizer").setup()
+
+-- vim.diagnostic.config({
+-- 	float = { source = "always", border = border },
+-- 	virtual_text = false,
+-- 	signs = true,
+-- })
+
+-- File manager
+cmd [[
+    let g:netrw_banner=0
+    let g:netrw_winsize=20
+    let g:netrw_keepdir=0
+]]
