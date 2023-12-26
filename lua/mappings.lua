@@ -5,7 +5,7 @@ end
 map("n", "<c-p>", ":FZF<cr>")
 
 map("t", "<esc>", "<c-\\><c-n>")
-map("t", "<f4>", ":sp<cr>:term<cr>")
+map("n", "<f4>", ":sp<cr>:term<cr>")
 
 
 map("n", "j", "gj")
