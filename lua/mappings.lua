@@ -1,44 +1,32 @@
--- Leader
-vim.g.mapleader = ","
+local function map(m, k, v)
+    vim.keymap.set(m, k, v, { silent = true })
+end
 
--- Remaps ; to : in normal mode
-vim.keymap.set("n", ";", ":", { noremap = true })
+map("n", "<c-p>", ":FZF<cr>")
 
--- Clear highlight search
-vim.keymap.set("n", "<leader><space>", ':let @/=""<cr>')
+map("t", "<esc>", "<c-\\><c-n>")
+map("t", "<f4>", ":sp<cr>:term<cr>")
 
--- File explorer
-vim.keymap.set("n", "<leader>e", ":Lex<cr>")
 
--- FZF
-vim.keymap.set("n", "<c-p>", ":FZF<cr>")
+map("n", "j", "gj")
+map("n", "k", "gk")
 
--- Terminal
-vim.keymap.set("t", "<esc>", "<c-\\><c-n>")
-vim.keymap.set("n", "<f4>", ":sp<cr>:term<cr>")
+map("n", "]b", ":bn<cr>")
+map("n", "[b", ":bp<cr>")
 
--- Navigation
-vim.keymap.set("n", "j", "gj")
-vim.keymap.set("n", "k", "gk")
+map("n", "<c-t>", ":tabnew <cr>")
+map("n", "]t", "gt")
+map("n", "[t", "gT")
 
--- Buffers
-vim.keymap.set("n", "]b", ":bn<cr>")
-vim.keymap.set("n", "[b", ":bp<cr>")
-vim.keymap.set("n", "<leader>c", ":bd<cr>")
-vim.keymap.set("n", "<c-t>", ":tabnew <cr>")
-vim.keymap.set("n", "]t", "gt")
-vim.keymap.set("n", "[t", "gT")
+map("n", "<f2>", ":set spell!<cr>")
 
--- Toggle functions
--- Spell checking
-vim.keymap.set("n", "<f2>", ":set spell!<cr>")
--- Wrap
-vim.keymap.set("n", "<leader>tw", ":set wrap!<cr>")
--- List
-vim.keymap.set("n", "<leader>tl", ":set list!<cr>")
+map("n", "<leader>tw", ":set wrap!<cr>")
 
--- Copy selection to Xorg
-vim.cmd([[
-vmap <silent> <leader>yy "+y
-vmap <silent> <leader>dd "+c
+map("n", "<leader>tl", ":set list!<cr>")
+
+local cmd = vim.cmd
+cmd([[
+    vmap <silent> <leader>yy "+y
+    vmap <silent> <leader>dd "+c
 ]])
+
