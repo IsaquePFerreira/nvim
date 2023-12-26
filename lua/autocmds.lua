@@ -1,8 +1,11 @@
-vim.cmd([[
-    " au VimLeave,VimSuspend * set guicursor=a:ver90:block-blinkon0
+local cmd = vim.cmd
 
+cmd([[
     autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
     autocmd TermOpen * startinsert
     autocmd BufLeave term://* stopinsert
-    autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
 ]])
+
+-- cmd([[
+--     autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
+-- ]])
