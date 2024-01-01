@@ -1,4 +1,3 @@
--- Base
 local g = vim.g
 g.mapleader = ","
 
@@ -39,7 +38,7 @@ o.splitright = true
 opt.mouse = "a"
 
 cmd([[
-    colorscheme minimalist
+    colorscheme everforest
     highlight clear StatusLine
 ]])
 
