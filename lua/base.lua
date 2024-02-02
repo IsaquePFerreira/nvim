@@ -1,72 +1,68 @@
 local g = vim.g
 g.mapleader = ","
 
+-- File manager
+g.netrw_banner = 0
+g.netrw_browse_split = 4
+g.netrw_altv = 1
+g.netrw_liststyle = 3
+g.netrw_winsize = 20
+g.netrw_keepdir = 0
+
+local cmd = vim.cmd
 local o = vim.o
 local opt = vim.opt
-local cmd = vim.cmd
 
-o.termguicolors = true
-
-o.scrolloff = 8
-
-o.number = true
+opt.title = true
+cmd("set path+=**")
+cmd("syntax on")
+cmd("filetype plugin indent on")
+opt.termguicolors = true
+cmd("colorscheme everforest")
+opt.backup = false
+opt.writebackup = false
+opt.swapfile = false
+opt.undofile = true
+cmd("set undodir=~/.config/nvim/undodir")
+opt.compatible = false
+opt.number = true
 o.numberwidth = 2
-o.cursorline = true
-
-o.expandtab = true
-o.autoindent = true
-o.wrap = false
-o.textwidth = 79
-o.tabstop = 4
-o.shiftwidth = 4
-o.softtabstop = -1
+opt.mouse = "a"
+opt.ignorecase = true
+opt.smartcase = true
+opt.hlsearch = false
+opt.incsearch = true
+opt.wrap = false
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.softtabstop = -1
+opt.expandtab = true
+opt.textwidth = 79
+opt.fileencoding = "utf-8"
+opt.pumheight = 10
+opt.showtabline = 2
+opt.laststatus = 2
+opt.signcolumn = "auto"
+opt.autoindent = true
+opt.smartindent = true
+opt.showcmd = true
+opt.showmode = true
+opt.scrolloff = 8
+opt.sidescrolloff = 8
+-- opt.clipboard = unnamedplus
+opt.completeopt = { "menuone", "noselect" }
+opt.splitbelow = true
+opt.splitright = true
+cmd("set wildmenu")
+opt.cursorline = true
 o.list = false
 o.listchars = "tab:›-,space:·,trail:_,eol:↲"
-
-o.ignorecase = true
-o.smartcase = true
-
-o.backup = false
-o.writebackup = false
-o.undofile = true
-cmd([[ set undodir=~/.config/nvim/undodir ]])
-o.swapfile = false
-
-o.splitbelow = true
-o.splitright = true
-
-opt.mouse = "a"
-
-cmd([[
-    colorscheme everforest
-    highlight clear StatusLine
-]])
-
-cmd([[
-    syntax on
-    filetype plugin indent on
-]])
-
 opt.confirm = true
-
-o.foldmethod = "marker"
-o.fillchars = "fold: "
-
----- Spelling
+opt.foldmethod = "marker"
+opt.fillchars = "fold: "
+-- Spelling
 opt.spell = false
 opt.spelllang = "pt_br,en"
 
+-- Colorizer
 require("colorizer").setup()
-
--- vim.diagnostic.config({
--- 	float = { source = "always", border = border },
--- 	virtual_text = false,
--- 	signs = true,
--- })
-
--- File manager
-cmd [[
-    let g:netrw_banner=0
-    let g:netrw_winsize=20
-    let g:netrw_keepdir=0
-]]
