@@ -10,6 +10,3 @@ cmd([[
     autocmd VimLeave,Vimsuspend * set guicursor=a:ver90:block-blinckon0
 ]])
 
--- cmd([[
---     autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
--- ]])
