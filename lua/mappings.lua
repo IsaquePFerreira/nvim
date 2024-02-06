@@ -39,17 +39,6 @@ map("n", "<leader>tl", ":set list!<cr>")
 map("n", "<leader>th", ":set hls!<cr>")
 map("n", "<leader>tc", ":noh<cr>")
 
--- Copy/Cut vim for xorg
-local cmd = vim.cmd
-cmd([[
-    vmap <silent> <leader>yy "+y
-    vmap <silent> <leader>dd "+c
-]])
-
--- cmd([[
---    nmap <c-s>  :-1read ~/.config/nvim/snippets/<c-z>
--- ]])
-
 -- Replace all instances of highlighted words
 map("v", "<leader>r", '"hy:%s/<c-r>h//g<left><left>')
 
