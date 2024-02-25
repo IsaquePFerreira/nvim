@@ -65,4 +65,4 @@ opt.spell = false
 opt.spelllang = "pt_br,en"
 
 -- Colorizer
-require("colorizer").setup()
+require("colorizer").setup(nil, { css = true; })
