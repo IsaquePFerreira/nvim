@@ -6,6 +6,7 @@ require("nvim-treesitter.configs").setup({
 		"javascript",
 		"lua",
 		"markdown",
+        "python",
 		"vim",
 		"vimdoc",
 		"query",
