@@ -3,7 +3,7 @@ My personal config for web development.
 
 Dependencies
 ---
-- vim-plug
+- [vim-plug](https://github.com/junegunn/vim-plug)
 - FZF -- install fzf package
 
 Install
