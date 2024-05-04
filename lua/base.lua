@@ -19,6 +19,10 @@ cmd("syntax on")
 cmd("filetype plugin indent on")
 opt.termguicolors = true
 cmd("colorscheme everforest")
+cmd("hi Normal guibg=NONE ctermbg=NONE")
+cmd("hi TabLine      guifg=#606060 guibg=NONE gui=none")
+cmd("hi TabLineSel   guifg=#606060 gui=bold")
+cmd("hi TabLineFill  guifg=#606060 guibg=NONE gui=none")
 opt.backup = false
 opt.writebackup = false
 opt.swapfile = false
