@@ -47,5 +47,3 @@ map("v", "J", ":m '>+1<cr>gv=gv")
 -- Move current line up
 map("v", "K", ":m '>-2<cr>gv=gv")
 
--- Popup menu
-map("i", "<c-p>", "<c-n>")
