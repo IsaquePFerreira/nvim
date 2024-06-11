@@ -207,7 +207,7 @@ nnoremap <leader>n :tabedit<space>
 " --------
 " Replace all occurrences
 " --------
-vmap <leader>r hy:%s/<c-r>h//g<left><left>
+nnoremap <leader>r :%s/\<<c-r><c-w>\>//g<left><left>
 
 " --------
 " Move lines
