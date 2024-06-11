@@ -1,6 +1,0 @@
-require("plugins")
-require("base")
-require("mappings")
-require("statusline")
-require("autocmds")
-require("syntaxhl")
