@@ -1,4 +1,33 @@
 " --------
+" Plugins
+" --------
+call plug#begin()
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+call plug#end() 
+
+" --------
+" Plugins
+" --------
+lua << EOF
+require("nvim-treesitter.configs").setup({
+	ensure_installed = {
+		"bash",
+		"c",
+		"javascript",
+		"lua",
+		"markdown",
+        "python",
+		"vim",
+		"vimdoc",
+		"query",
+	},
+	highlight = {
+		enable = true,
+	},
+})
+EOF
+
+" --------
 " Autocmds
 " --------
 " Disable auto commenting in a new line
