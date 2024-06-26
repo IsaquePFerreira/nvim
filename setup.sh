@@ -18,3 +18,8 @@ cp autoload/emmet.vim ../autoload/
 cp -a autoload/emmet ../autoload/
 cd ..
 rm -rf emmet-vim
+
+# Pega plugin manager
+cd autoload
+wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
+nvim -c PlugInstall
