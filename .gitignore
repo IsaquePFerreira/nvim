@@ -1,3 +1,7 @@
 undodir
 plugged
+autoload
 autoload/plug.vim
+colors
+doc
+plugin
