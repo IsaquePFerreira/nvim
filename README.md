@@ -7,7 +7,8 @@ Installation
 Recommended step
 
 Fork this repo so that you have your own copy that you can modify, then install by cloning the
-fork to your machine using the commands below
+fork to your machine using the commands below.
+
 Clone the repo
 
 Linux
