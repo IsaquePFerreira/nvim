@@ -105,9 +105,56 @@ vim.opt.rtp:prepend(lazypath)
 -- [[ Configure and install plugins ]]
 -- Here is where you install your plugins.
 require('lazy').setup({
-  -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
-
+  {
+    'sainnhe/everforest',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.everforest_enable_italic = true
+      vim.cmd.colorscheme 'everforest'
+    end,
+  },
+  {
+    'xiyaowong/transparent.nvim',
+    opts = {
+      -- table: default groups
+      groups = {
+        'Normal',
+        'NormalNC',
+        'Comment',
+        'Constant',
+        'Special',
+        'Identifier',
+        'Statement',
+        'PreProc',
+        'Type',
+        'Underlined',
+        'Todo',
+        'String',
+        'Function',
+        'Conditional',
+        'Repeat',
+        'Operator',
+        'Structure',
+        'LineNr',
+        'NonText',
+        'SignColumn',
+        'CursorLine',
+        'CursorLineNr',
+        'StatusLine',
+        'StatusLineNC',
+        'EndOfBuffer',
+      },
+      -- table: additional groups that should be cleared
+      extra_groups = {},
+      -- table: groups you don't want to clear
+      exclude_groups = {},
+      -- function: code to be executed after highlight groups are cleared
+      -- Also the user event "TransparentClear" will be triggered
+      on_clear = function() end,
+    },
+  },
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
