@@ -16,7 +16,7 @@ local options = {
 	title = true, --automatic window titlebar
 	
 	number = true, --numbering lines
-	relativenumber = true, --toggle bound to leader nn
+	relativenumber = false, --toggle bound to leader nn
 	numberwidth = 4,
 
 	smarttab = true, --indentation stuff

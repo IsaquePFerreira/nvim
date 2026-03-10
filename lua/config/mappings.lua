@@ -87,12 +87,3 @@ map("n", "<leader>ma", function() --quick make in dir of buffer
 	vim.cmd("!sudo make uninstall && sudo make clean install %")
 end)
 
-
-map("n", "<leader>nn", function() --toggle relative vs absolute line numbers
-	if vim.wo.relativenumber then
-		vim.wo.relativenumber = false
-		vim.wo.number = true
-	else
-		vim.wo.relativenumber = true
-	end
-end)
