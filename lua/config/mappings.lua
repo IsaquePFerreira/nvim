@@ -46,19 +46,16 @@ map("n", "<F8>", ":vertical resize -2<CR>")
 map("n", "<leader>f", ":lua require('fzf-lua').files()<CR>") --search cwd
 map("n", "<leader>Fh", ":lua require('fzf-lua').files({ cwd = '~/' })<CR>") --search home
 map("n", "<leader>Fc", ":lua require('fzf-lua').files({ cwd = '~/.config' })<CR>") --search .config
-map("n", "<leader>Fl", ":lua require('fzf-lua').files({ cwd = '~/.local/src' })<CR>") --search .local/src
 map("n", "<leader>Ff", ":lua require('fzf-lua').files({ cwd = '..' })<CR>") --search above
 map("n", "<leader>Fr", ":lua require('fzf-lua').resume()<CR>") --last search
 map("n", "<leader>g", ":lua require('fzf-lua').grep()<CR>") --grep
 map("n", "<leader>G", ":lua require('fzf-lua').grep_cword()<CR>") --grep word under cursor
 
 -- misc
-map("n", "<leader>s", ":%s//g<Left><Left>") --replace all
+map("n", "<leader>s", ":%s/<c-r><c-w>//g<Left><Left>") --replace all
 map("n", "<leader>t", ":NvimTreeToggle<CR>") --open file explorer
-map("n", "<leader>P", ":PlugInstall<CR>") --vim-plug
-map('n', '<leader>z', ":lua require('FTerm').open()<CR>") --open term
-map('t', '<Esc>', '<C-\\><C-n><CMD>lua require("FTerm").close()<CR>') --preserves session
-map("n", "<leader>w", ":w<CR>") --write but one less key
+map('t', '<Esc>', '<C-\\><C-n>') --return to normal mode
+map("n", "<leader>w", ":w ++p<CR>") --write but one less key, and create a missing folder (nvim 12.+)
 map("n", "<leader>d", ":w ") --duplicate to new name
 map("n", "<leader>x", "<cmd>!chmod +x %<CR>") --make a file executable
 map("n", "<leader>mv", ":!mv % ") --move a file to a new dir
@@ -66,18 +63,12 @@ map("n", "<leader>R", ":so %<CR>") --reload neovim config
 map("n", "<leader>u", ':silent !xdg-open "<cWORD>" &<CR>') --open a url under cursor
 map("v", "<leader>i", "=gv") --auto indent
 map("n", "<leader>W", ":set wrap!<CR>") --toggle wrap
-map("n", "<leader>l", ":Twilight<CR>") --surrounding dim
 
 -- decisive csv
 map("n", "<leader>csa", ":lua require('decisive').align_csv({})<cr>")
 map("n", "<leader>csA", ":lua require('decisive').align_csv_clear({})<cr>")
 map("n", "[c", ":lua require('decisive').align_csv_prev_col()<cr>")
 map("n", "]c", ":lua require('decisive').align_csv_next_col()<cr>")
-
-
-map("n", "<leader>H", function() --toggle htop in term
-    _G.htop:toggle()
-end)
 
 
 map("n", "<leader>ma", function() --quick make in dir of buffer
