@@ -1,0 +1,64 @@
+{
+  "plugins": {
+    "Comment.nvim": {
+      "rev": "e30b7f2008e52442154b66f7c519bfd2f1e32acb",
+      "src": "https://github.com/numToStr/Comment.nvim"
+    },
+    "alpha-nvim": {
+      "rev": "4ba26e41990c11620c96c0e1cff20eab65efde4a",
+      "src": "https://github.com/goolord/alpha-nvim"
+    },
+    "barbar.nvim": {
+      "rev": "337ecfadb8bf005050990bf2f624dc4fc828dabd",
+      "src": "https://github.com/romgrk/barbar.nvim"
+    },
+    "decisive.nvim": {
+      "rev": "3bdee1e650a5ed39f24042ca293f49bb01bcc5c3",
+      "src": "https://github.com/emmanueltouzery/decisive.nvim"
+    },
+    "fzf-lua": {
+      "rev": "82ddfe6efc56480c052fd213e0cbb2f024dfd754",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "gitsigns.nvim": {
+      "rev": "c0862d382a35b7b45757d8d151a6a634c09bf3ce",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "nvim-autopairs": {
+      "rev": "3172f40c16563db871a58f20d205c710ad782311",
+      "src": "https://github.com/windwp/nvim-autopairs"
+    },
+    "nvim-lint": {
+      "rev": "52107ce2076a27a285af781248e2c59bad817cd0",
+      "src": "https://github.com/mfussenegger/nvim-lint"
+    },
+    "nvim-tree.lua": {
+      "rev": "dbc9d96a3633c2de85f409416ebd4a3aacf4220a",
+      "src": "https://github.com/nvim-tree/nvim-tree.lua"
+    },
+    "nvim-treesitter": {
+      "rev": "37e52c733ada9d8d544d53a763140ef1ba404353",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "nvim-web-devicons": {
+      "rev": "0dc0cfb0c6858041174a53c7aa4adaf65e994b3c",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "pywal16.nvim": {
+      "rev": "6210a13976d2fce09b5b1022944e8573e04d6d02",
+      "src": "https://github.com/uZer/pywal16.nvim"
+    },
+    "render-markdown.nvim": {
+      "rev": "a67f826164c38c836fc6060f32b275c4c43317a7",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "which-key.nvim": {
+      "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "src": "https://github.com/folke/which-key.nvim"
+    }
+  }
+}
