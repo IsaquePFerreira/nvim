@@ -55,7 +55,6 @@ map("n", "<leader>G", ":lua require('fzf-lua').grep_cword()<CR>") --grep word un
 -- misc
 map("n", "<leader>s", ":%s//g<Left><Left>") --replace all
 map("n", "<leader>t", ":NvimTreeToggle<CR>") --open file explorer
-map("n", "<leader>p", switch_theme) --cycle themes
 map("n", "<leader>P", ":PlugInstall<CR>") --vim-plug
 map('n', '<leader>z', ":lua require('FTerm').open()<CR>") --open term
 map('t', '<Esc>', '<C-\\><C-n><CMD>lua require("FTerm").close()<CR>') --preserves session

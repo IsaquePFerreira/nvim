@@ -43,7 +43,7 @@ end
 lualine.setup({
 options = {
 	icons_enabled = true,
-	theme = "auto", --auto allows for theme switching
+	theme = "auto",
 	component_separators = { left = "", right = "" },
 	section_separators = { left = "", right = "" },
 	disabled_filetypes = { "alpha", "dashboard" },
@@ -61,8 +61,3 @@ sections = {
 	extensions = { 'nvim-tree' },
 })
 
--- transparency override if using old pywal, shouldn't be needed with 16
--- vim.api.nvim_set_hl(0, "lualine_c_normal", { bg = "none" })
--- vim.api.nvim_set_hl(0, "lualine_c_inactive", { bg = "none" })
--- vim.api.nvim_set_hl(0, "lualine_x_normal", { bg = "none" })
--- vim.api.nvim_set_hl(0, "lualine_x_inactive", { bg = "none" })

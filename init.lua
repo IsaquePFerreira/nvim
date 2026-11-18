@@ -1,8 +1,7 @@
 vim.loader.enable() --  SPEEEEEEEEEEED 
 
--- Plugins
+-- Plugin manager
 vim.pack.add({
-	{ src = 'https://github.com/uZer/pywal16.nvim'},
 	{ src = 'https://github.com/nvim-lualine/lualine.nvim'},
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons'},
 	{ src = 'https://github.com/folke/which-key.nvim'},
@@ -19,15 +18,13 @@ vim.pack.add({
 	{ src = 'https://github.com/emmanueltouzery/decisive.nvim'},
 })
 
--- move config and plugin config to alternate files
-require("config.theme")
+-- Configs
 require("config.mappings")
 require("config.options")
 require("config.autocmd")
-
+-- Plugins config
 require("plugins.alpha")
 require("plugins.barbar")
--- require("plugins.colorscheme")
 require("plugins.comment")
 require("plugins.gitsigns")
 require("plugins.lualine")
@@ -39,4 +36,5 @@ require("plugins.nvim-tree")
 require("plugins.treesitter")
 require("plugins.which-key")
 
-load_theme()
+-- Colorscheme
+vim.cmd.colorscheme('catppuccin')

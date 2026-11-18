@@ -14,7 +14,6 @@ end
 
 local themes = { --add more themes here, if installed
 	{ "catppuccin", "catppuccin" },
-	{ "gruvbox", "gruvbox" },
 	{ "pywal16", "pywal16-nvim" },
 }
 
