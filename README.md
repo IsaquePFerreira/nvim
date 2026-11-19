@@ -2,6 +2,7 @@
 
 #### Build off of mine, or start your own!
 
+
 <br>
 
 > Before starting, ensure you have:
@@ -116,3 +117,11 @@ Plugins might include:
 - Code runners
 - Remote development
 - Refactoring
+
+## IsaquePFerreira
+
+My changes:
+
+- Options and mappings I use on a daily basis
+- Removed plugins I don't need
+- Replaced vim-plug with vim.pack (nvim 0.12)
