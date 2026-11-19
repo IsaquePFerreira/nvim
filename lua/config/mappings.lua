@@ -54,6 +54,7 @@ map("n", "<leader>G", ":lua require('fzf-lua').grep_cword()<CR>") --grep word un
 -- misc
 map("n", "<leader>s", ":%s/<c-r><c-w>//g<Left><Left>") --replace all
 map("n", "<leader>t", ":NvimTreeToggle<CR>") --open file explorer
+map('n', '<leader>z', ':Term<CR>') --return to normal mode
 map('t', '<Esc>', '<C-\\><C-n>') --return to normal mode
 map("n", "<leader>w", ":w ++p<CR>") --write but one less key, and create a missing folder (nvim 12.+)
 map("n", "<leader>d", ":w ") --duplicate to new name

@@ -95,3 +95,10 @@ vim.api.nvim_create_autocmd("User", {
 		end
 	end,
 })
+
+vim.cmd([[
+command! Term :botright split term://$SHELL
+autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
+autocmd TermOpen * startinsert
+autocmd BufLeave term://* stopinsert
+]])
