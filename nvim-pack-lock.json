@@ -48,10 +48,6 @@
       "rev": "0dc0cfb0c6858041174a53c7aa4adaf65e994b3c",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
-    "pywal16.nvim": {
-      "rev": "6210a13976d2fce09b5b1022944e8573e04d6d02",
-      "src": "https://github.com/uZer/pywal16.nvim"
-    },
     "render-markdown.nvim": {
       "rev": "a67f826164c38c836fc6060f32b275c4c43317a7",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
