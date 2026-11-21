@@ -23,6 +23,7 @@ local options = {
 	cindent = true,
 	autoindent = false,
 	tabstop = 4, --visual width of tab
+	shiftwidth = 0,
 
 	foldmethod = "expr",
 	foldlevel = 99, --disable folding, lower #s enable
